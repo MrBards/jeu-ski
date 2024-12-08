@@ -1,3 +1,4 @@
+// Création des pistes + tracé
 const pistes = [
   {
     nom: "Sprint Bessans 2024",
@@ -13,7 +14,6 @@ const pistes = [
     planImage: "images/plan/distance bessans 2024.jpg",
     profilImage: "images/profil/distance bessans 2024.jpg",
   },
-  // Ajoutez d'autres pistes ici
 ];
 
 // Fonction pour créer les cartes de pistes
@@ -21,7 +21,7 @@ function createPisteCard(piste) {
   const card = document.createElement("div");
   card.classList.add("card");
 
-  // Titre de la carte
+  // Nom de la piste
   const header = document.createElement("div");
   header.classList.add("header");
   header.textContent = piste.nom;

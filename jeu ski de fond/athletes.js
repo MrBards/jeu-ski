@@ -1,4 +1,4 @@
-// Données des athlètes
+// Création des athlètes + stats
 const athletes = [
   {
     name: "Clément Monnier",
@@ -7,7 +7,6 @@ const athletes = [
 		Skating: 80,
 		Classique: 70,
 		Endurance: 70,
-		Technique: 73,
 		Vitesse: 70,
 		Accélération: 78,
 		Mental: 70,
@@ -22,7 +21,6 @@ const athletes = [
 		Skating: 85,
 		Classique: 85,
 		Endurance: 80,
-		Technique: 65,
 		Vitesse: 78,
 		Accélération: 75,
 		Mental: 75,
@@ -37,7 +35,6 @@ const athletes = [
 		Skating: 50,
 		Classique: 70,
 		Endurance: 60,
-		Technique: 55,
 		Vitesse: 70,
 		Accélération: 78,
 		Mental: 100,
@@ -52,7 +49,6 @@ const athletes = [
 		Skating: 75,
 		Classique: 80,
 		Endurance: 80,
-		Technique: 70,
 		Vitesse: 73,
 		Accélération: 78,
 		Mental: 75,
@@ -67,7 +63,6 @@ const athletes = [
 		Skating: 80,
 		Classique: 75,
 		Endurance: 78,
-		Technique: 70,
 		Vitesse: 78,
 		Accélération: 70,
 		Mental: 80,
@@ -82,7 +77,6 @@ const athletes = [
 		Skating: 100,
 		Classique: 11,
 		Endurance: 70,
-		Technique: 7,
 		Vitesse: 100,
 		Accélération: 20,
 		Mental: 50,
@@ -98,7 +92,7 @@ athletes.forEach((athlete, index) => {
   const athleteCard = document.createElement("div");
   athleteCard.classList.add("athlete-card");
 
-  // Titre de l'athlète
+  // Nom de l'athlète
   const athleteTitle = document.createElement("h2");
   athleteTitle.textContent = athlete.name;
 

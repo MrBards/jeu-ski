@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Optionnel -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Course</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-  <div id="race-menu">
-    <h2>Sélectionnez votre piste et athlète</h2>
-    <select id="trackSelect"></select>
-    <select id="athleteSelect"></select>
-    <button onclick="startRace()">Commencer la course</button>
-  </div>
+    <canvas id="jeu"></canvas>
 
-  <div id="race-view" style="display:none;">
-    <canvas id="raceCanvas" width="800" height="600"></canvas>
-    <p id="timer">Temps : 0:00</p>
-    <button onclick="endRace()">Terminer</button>
-  </div>
-
-  <script src="courses.js"></script>
-  <script src="raceCanvas.js"></script>
-</body>
+    <!-- Charger les scripts JS dans le bon ordre -->
+    <script src="courses.js"></script>
 </html>
